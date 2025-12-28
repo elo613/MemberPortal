@@ -3,7 +3,11 @@ const SUPABASE_URL = 'https://gmzjhitgblngoaglragk.supabase.co';
 const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdtempoaXRnYmxuZ29hZ2xyYWdrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY5MjYwMDksImV4cCI6MjA4MjUwMjAwOX0.Fn-bOOVCrFN55WjrFTgY5YsL7ulHKKwai-H1ictLgKA';
 const PDF_FILENAME = 'About Barclays.pdf'; 
 
-const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_KEY, {
+  global: {
+    headers: { 'apikey': SUPABASE_KEY }
+  }
+});
 
 let isSignUp = false;
 
