@@ -61,7 +61,7 @@ async function refreshUI() {
 
         // 2. Fetch Secure PDF Link (Signed URL)
         const { data: storageData } = await supabaseClient.storage
-            .from('protected-docs')
+            .from('PRIVATE_BUCKET')
             .createSignedUrl(PDF_FILENAME, 60);
 
         if (storageData) {
