@@ -1,0 +1,95 @@
+:root {
+    --primary: #3ecf8e;
+    --error: #ff4d4d;
+    --bg: #f4f7f6;
+}
+
+body {
+    font-family: -apple-system, system-ui, sans-serif;
+    background: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: opacity 0.2s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.secondary-btn {
+    background: none;
+    color: #666;
+    text-decoration: underline;
+    font-size: 14px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+#user-code {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary);
+    letter-spacing: 2px;
+    margin: 20px 0;
+    padding: 10px;
+    background: #eefaf5;
+    border-radius: 8px;
+}
+
+.pdf-box {
+    border: 2px dashed var(--primary);
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+#loading {
+    color: var(--primary);
+    font-weight: bold;
+}
